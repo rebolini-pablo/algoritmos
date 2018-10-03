@@ -30,7 +30,13 @@
     }
 
     else {
-      if (buscado-1 === items[j] && buscado+1 === items[i]) {
+     
+      /**
+       * Pequeña modificacion, 
+       * en caso de no estar disponible el valor buscado, 
+       * retorna un array con la posicion donde DEBERIA estar.
+       */
+      if (buscado-1 === items[j]) {
         return [items[j], items[i]];
       } 
 
